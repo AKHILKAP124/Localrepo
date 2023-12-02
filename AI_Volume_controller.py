@@ -1,3 +1,5 @@
+# AI Volume Controller 
+
 import cv2  
 import mediapipe as mp 
 from math import hypot 
