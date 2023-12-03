@@ -25,9 +25,9 @@ current_vol = volume.GetMasterVolumeLevel()
 alpha = 0.2  # Adjust this value for smoother changes 
  
 while True: 
-    success, img = cap.read() 
-    imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB) 
-    results = hands.process(imgRGB) 
+   success, img = cap.read() 
+   imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB) 
+   results = hands.process(imgRGB) 
  
     lmList = [] 
     if results.multi_hand_landmarks: 
